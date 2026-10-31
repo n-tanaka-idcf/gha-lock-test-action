@@ -3,5 +3,5 @@ description: Test action for gh actions-lock moved-ref experiments
 runs:
   using: composite
   steps:
-    - run: echo "test action version 1 (commit A)"
+    - run: echo "test action version 1 rewritten (commit C)"
       shell: bash

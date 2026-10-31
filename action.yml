@@ -3,5 +3,8 @@ description: Test action for gh actions-lock moved-ref experiments
 runs:
   using: composite
   steps:
-    - run: echo "test action version 1 rewritten (commit C)"
+    - run: echo "test action version 2 (commit D)"
       shell: bash
+    - uses: actions/github-script@v7
+      with:
+        script: console.log('transitive dependency ran')

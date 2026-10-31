@@ -1,0 +1,7 @@
+name: gha-lock-test-action
+description: Test action for gh actions-lock moved-ref experiments
+runs:
+  using: composite
+  steps:
+    - run: echo "test action version 1 (commit A)"
+      shell: bash
